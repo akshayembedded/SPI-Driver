@@ -24,7 +24,6 @@ int main(void)
 		SPDR='a';
 	
 		while((SPSR&(0x80))==0);
-		SPSR=0x80;
 		PORTC=SPDR;
 	}
 }
