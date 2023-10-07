@@ -19,6 +19,6 @@ int main(void)
 		SPDR='a';
 		while((SPSR&(0x80))==0);
 		PORTC=SPDR;
-		delay(1000);
+	
 	}
 }
