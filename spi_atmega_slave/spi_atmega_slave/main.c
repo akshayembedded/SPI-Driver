@@ -14,16 +14,11 @@ int main(void)
 	DDRB=0x40;
 	PORTB=0x00;
 	SPCR=0x4c;
-
-	
-	
-	/* Replace with your application code */
 	while (1)
 	{
-		
 		SPDR='a';
-	
 		while((SPSR&(0x80))==0);
 		PORTC=SPDR;
+		delay(1000);
 	}
 }
